@@ -1,8 +1,8 @@
-/**
+/** Chapter 7 Lab - Weblog Analyzer
  * Read web server data and analyse hourly access patterns.
  * 
- * @author David J. Barnes and Michael Kölling.
- * @version    2016.02.29
+ * @author Alessandro Marucci
+ * @version 2025.04.07
  */
 public class LogAnalyzer
 {
