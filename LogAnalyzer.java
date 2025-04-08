@@ -85,5 +85,22 @@ public class LogAnalyzer
         }
         return busiestHour;
             
-        }
     }
+    
+    /**
+     * Return the quietest hour of the day.
+     */
+    public int quietestHour()
+    {
+        int quietestHour = 0;
+        for (int hour = 1; hour < hourCounts.length; hour++)
+        {
+            if (hourCounts[hour] < hourCounts[quietestHour])
+            {
+                quietestHour = hour;
+            }
+        }
+        return quietestHour;
+            
+    }
+}
