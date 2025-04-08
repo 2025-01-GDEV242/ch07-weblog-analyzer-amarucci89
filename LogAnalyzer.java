@@ -1,4 +1,4 @@
-/** Chapter 7 Lab - Weblog Analyzer
+/** Chapter 7 Lab - Weblog Analyzer<br>
  * Read web server data and analyse hourly access patterns.
  * 
  * @author Alessandro Marucci
