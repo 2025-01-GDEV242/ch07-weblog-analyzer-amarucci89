@@ -59,6 +59,7 @@ public class LogAnalyzer
     
     /**
      * Return the number of accesses recorded in the log file.
+     * @return The number of accesses.
      */
     public int numberOfAccesses()
     {
@@ -72,6 +73,7 @@ public class LogAnalyzer
     
     /**
      * Return the busiest hour of the day.
+     * @return The busiest hour.
      */
     public int busiestHour()
     {
@@ -83,12 +85,12 @@ public class LogAnalyzer
                 busiestHour = hour;
             }
         }
-        return busiestHour;
-            
+        return busiestHour;       
     }
     
     /**
      * Return the busiest two hour period of the day.
+     * @return The busiest two hour period.
      */
     public int busiestTwoHourPeriod()
     {
@@ -103,12 +105,12 @@ public class LogAnalyzer
                 busiestPeriodCount = periodCount;
             }
         }
-        return busiestPeriod;
-            
+        return busiestPeriod;       
     }
     
     /**
      * Return the quietest hour of the day.
+     * @return The quiestest hour.
      */
     public int quietestHour()
     {
@@ -120,7 +122,6 @@ public class LogAnalyzer
                 quietestHour = hour;
             }
         }
-        return quietestHour;
-            
+        return quietestHour;        
     }
 }
