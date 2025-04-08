@@ -88,6 +88,26 @@ public class LogAnalyzer
     }
     
     /**
+     * Return the busiest two hour period of the day.
+     */
+    public int busiestTwoHourPeriod()
+    {
+        int busiestPeriod = 0;
+        int busiestPeriodCount = 0;
+        for (int hour = 0; hour < hourCounts.length - 1; hour++)
+        {
+            int periodCount = hourCounts[hour] + hourCounts[hour + 1];
+            if (periodCount > busiestPeriodCount)
+            {
+                busiestPeriod = hour;
+                busiestPeriodCount = periodCount;
+            }
+        }
+        return busiestPeriod;
+            
+    }
+    
+    /**
      * Return the quietest hour of the day.
      */
     public int quietestHour()
